@@ -381,6 +381,9 @@ header {
     text-transform: uppercase;
     font-size: 15px;
   }
+  .sidebar {
+    width: 100%;
+  }
 
   #main-nav {
     display: flex;
@@ -394,6 +397,9 @@ header {
   }
   .logo img {
     width: 50px;
+  }
+  .sidebar {
+    width: 100%;
   }
   .wrapper {
     max-width: 400px;
