@@ -67,7 +67,8 @@ header {
 }
 .main-y {
   width: 100%;
-  padding: 1.5rem 0px;
+  padding-top: 1.5rem;
+  padding-bottom: 6rem;
 }
 .hero-container {
   display: flex;
@@ -104,16 +105,17 @@ header {
 .hero-text p {
   line-height: 25px;
 }
+
 .news {
   padding-bottom: 2rem;
 }
 .side {
-  width: 70%;
+  width: 50%;
   padding-left: 20px;
 }
 .side-container {
   background-color: hsl(240, 100%, 5%);
-  padding: 25px;
+  padding: 40px;
 }
 .side-title h1 {
   padding-bottom: 1rem;
@@ -187,9 +189,11 @@ header {
   position: absolute;
   right: 30px;
   top: 40px;
+  cursor: pointer;
 }
 .fa-bar {
   width: 60px;
+  cursor: pointer;
 }
 .menu {
   position: absolute;
@@ -238,7 +242,7 @@ header {
   left: 2rem;
   font-size: 2rem;
 } */
-@media only screen and (max-width: 1300px) {
+/* @media only screen and (max-width: 1300px) {
   #desktop-nav {
     display: none;
   }
@@ -310,7 +314,7 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-}
+} */
 @media only screen and (max-width: 768px) {
   #desktop-nav {
     display: none;
