@@ -110,7 +110,7 @@ header {
   padding-bottom: 2rem;
 }
 .side {
-  width: 50%;
+  width: 75%;
   padding-left: 20px;
 }
 .side-container {
@@ -212,109 +212,6 @@ header {
   padding: 1rem 1.5rem;
 }
 
-/* .sidebar {
-  position: fixed;
-  top: 0px;
-  right: 0;
-  width: 70%;
-  height: 100%;
-  background-color: white;
-  transition: all 300ms ease-in-out;
-}
-.sidebar.active {
-  right: 0px;
-}
-.sidebar .toggle-btn img {
-  position: fixed;
-  width: 70px;
-  top: 1.5rem;
-  right: 2rem;
-}
-.menu {
-  position: relative;
-}
-.menu li {
-  padding-bottom: 20px;
-}
-.menu li a {
-  position: relative;
-  top: 15rem;
-  left: 2rem;
-  font-size: 2rem;
-} */
-/* @media only screen and (max-width: 1300px) {
-  #desktop-nav {
-    display: none;
-  }
-  .logo img {
-    width: 50px;
-  }
-  .wrapper {
-    max-width: 1400px;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .hero-container {
-    display: block;
-  }
-  .side-container {
-    padding: 30px;
-  }
-  .hero-content {
-    display: block;
-  }
-  .flex-wrapper {
-    display: block;
-  }
-  .hero-title h1 {
-    font-size: 2rem;
-  }
-  .hero-mess {
-    padding-left: 0;
-  }
-  .side {
-    width: 100%;
-    padding: 0;
-  }
-  .main-y {
-    padding: 5px 0px;
-  }
-  .hero-img {
-    width: 100%;
-  }
-
-  .news {
-    padding-top: 1.5rem;
-  }
-  .side-content h1 {
-    font-size: 1rem;
-  }
-  .side-title h1 {
-    font-size: 1.5rem;
-  }
-  .content-fanet h1 {
-    font-size: 2rem;
-  }
-  .content-fanet p {
-    font-size: 0.8rem;
-    color: gray;
-  }
-  .content-fanet h2 {
-    font-size: 1rem;
-  }
-  .hero-mess .btn {
-    padding: 0.7rem 1.5rem;
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-
-  #main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-} */
 @media only screen and (max-width: 768px) {
   #desktop-nav {
     display: none;
@@ -424,7 +321,7 @@ header {
     padding-left: 0;
   }
   .side {
-    width: 75%;
+    width: 100%;
     padding: 0;
   }
   .main-y {
