@@ -127,6 +127,9 @@ header {
   border-bottom: 1px gray solid;
   padding-top: 1rem;
 }
+.side-content:last-child {
+  border-bottom: none;
+}
 .side-content h1 {
   font-size: 1.3rem;
   padding-bottom: 10px;
