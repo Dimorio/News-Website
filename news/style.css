@@ -115,12 +115,13 @@ header {
   padding-bottom: 2rem;
 }
 .side {
-  width: 75%;
+  width: 90%;
+  height: 100%;
   padding-left: 20px;
 }
 .side-container {
   background-color: hsl(240, 100%, 5%);
-  padding: 40px;
+  padding: 50px 20px;
 }
 .side-title h1 {
   padding-bottom: 1rem;
