@@ -83,8 +83,13 @@ header {
 .hero-mess {
   padding-left: 2.5rem;
 }
+.hero-mess {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .hero-mess .btn {
-  padding: 0.7rem 2.5rem;
+  padding: 1rem;
   background-color: hsl(5, 85%, 63%);
   border: none;
   color: white;
