@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 ::selection {
-  background-color: hsl(35, 77%, 62%);
+  background-color: hsl(5, 85%, 63%);
 }
 small {
   font-size: 0.9rem;
@@ -21,6 +21,9 @@ small {
 a {
   text-decoration: none;
   color: black;
+}
+.org a {
+  text-decoration: underline;
 }
 li {
   list-style: none;
@@ -33,6 +36,11 @@ p {
   font-size: 15px;
   font-weight: 400;
 }
+iframe {
+  display: block;
+  margin: 10px auto;
+}
+
 img {
   width: 100%;
 }
@@ -78,8 +86,16 @@ header {
   padding-left: 20px;
   padding-right: 20px;
 }
+.org .main-p {
+  font-weight: 500;
+}
+.org p {
+  font-weight: 400;
+}
 .wrapper-top {
   padding-top: 1rem;
+}
+.embed-video-container {
 }
 
 #desktop-nav {
@@ -100,7 +116,7 @@ header {
   transition: 0.6s ease;
 }
 .header.sticky {
-  background: hsl(35, 77%, 62%);
+  background: hsl(5, 85%, 63%);
 }
 #main-nav {
   display: none;
@@ -179,6 +195,9 @@ header {
   flex-direction: column;
   gap: 20%;
 }
+.page header {
+  height: 20%;
+}
 .page header h1 {
   font-size: 3rem;
   text-align: start;
@@ -200,9 +219,7 @@ header {
   padding-bottom: 10px;
   padding-top: 20px;
 }
-.org {
-  margin-top: 8rem;
-}
+
 .org ul {
   padding: 0px 50px;
   margin: 20px auto;
@@ -221,6 +238,7 @@ header {
 .page .main-p {
   padding: 0;
   margin: 0;
+  margin-bottom: 5px;
 }
 .author-junk::before {
   content: "";
@@ -230,9 +248,7 @@ header {
   width: 50px;
   height: 0;
 }
-.embed-video-container {
-  margin: 0px 50px;
-}
+
 footer {
   position: relative;
   width: 100%;
@@ -253,13 +269,17 @@ footer .foot {
   width: 70px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) and (max-width: 400px) {
   #desktop-nav {
     display: none;
   }
   #Wax {
     margin: 0;
   }
+  .page header {
+    height: 20%;
+  }
+
   .header.sticky {
     background: transparent;
   }
@@ -289,6 +309,19 @@ footer .foot {
   #Wax {
     margin: 0;
   }
+  .wrap {
+    max-width: 700px;
+    margin: auto;
+  }
+  .page header {
+    height: 20%;
+  }
+  .page .main-p {
+    font-size: 1.3rem;
+  }
+  .page p {
+    font-size: 1.15rem;
+  }
   .header.sticky {
     background: transparent;
   }
@@ -314,5 +347,139 @@ footer .foot {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #desktop-nav {
+    display: none;
+  }
+  #Wax {
+    margin: 0;
+  }
+  .wrap {
+    max-width: 550px;
+    margin: auto;
+  }
+  .page header {
+    height: 20%;
+  }
+  .page .main-p {
+    font-size: 1rem;
+  }
+  .page p {
+    font-size: 0.9rem;
+  }
+  .header.sticky {
+    background: transparent;
+  }
+  .header {
+    position: relative;
+  }
+  .logo img {
+    width: 50px;
+  }
+  /* .wrapper {
+    max-width: 500px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+
+  .sidebar {
+    width: 70%;
+    z-index: 100000000;
+  }
+
+  #main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #desktop-nav {
+    display: flex;
+  }
+  #main-nav {
+    display: none;
+  }
+  #Wax {
+    margin: 0;
+  }
+  .page .main-p {
+    font-size: 1.2rem;
+  }
+  .page p {
+    font-size: 1.1rem;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: auto;
+  }
+  .page header {
+    height: 20%;
+  }
+  .page-content {
+    margin-top: 6rem;
+  }
+  .header.sticky {
+    background: hsl(5, 85%, 63%);
+  }
+
+  .logo img {
+    width: 50px;
+  }
+  .wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sidebar {
+    width: 70%;
+    z-index: 100000000;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #desktop-nav {
+    display: flex;
+  }
+  #main-nav {
+    display: none;
+  }
+  #Wax {
+    margin: 0;
+  }
+  .wrap {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .page header {
+    height: 20%;
+  }
+  .page .main-p {
+    font-size: 1.5rem;
+  }
+  .page p {
+    font-size: 1.2rem;
+  }
+  .page-content {
+    margin-top: 6rem;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .wrapper {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sidebar {
+    width: 70%;
+    z-index: 100000000;
   }
 }
