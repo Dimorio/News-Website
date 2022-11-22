@@ -13,7 +13,7 @@ html {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 li {
   list-style: none;
@@ -85,7 +85,7 @@ header {
   transition: color 0.3s ease;
 }
 .nav-links .nav-items .nav-item:hover {
-  color: hsl(5, 85%, 63%);
+  color: hsl(35, 77%, 62%);
 }
 .sidebar .menu li a {
   transition: 500ms ease;
@@ -95,7 +95,7 @@ header {
 }
 .main-y {
   width: 100%;
-  padding-top: 1.5rem;
+  padding-top: 5.25rem;
 }
 .news {
   padding: 3rem 0;
@@ -224,6 +224,17 @@ header {
   transition: all 0.3s ease-in-out;
   transform: translate(100%);
 }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  transition: 0.6s ease;
+}
+.header.sticky {
+  background: hsl(5, 85%, 63%);
+}
 
 .show-sidebar {
   transform: translate(0);
@@ -257,6 +268,22 @@ header {
   padding: 1rem 1.5rem;
 }
 
+footer {
+  width: 100%;
+}
+footer .foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+.logo-rant {
+  margin-right: 20px;
+  padding: 20px;
+}
+.logo-rant img {
+  width: 70px;
+}
 @media only screen and (max-width: 768px) {
   #desktop-nav {
     display: none;

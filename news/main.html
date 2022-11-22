@@ -30,11 +30,11 @@
         <li><a href="">Categories</a></li>
       </ul>
     </div>
-    <header>
+    <header class="header" id="header">
       <div class="wrapper wrapper-top">
         <nav id="desktop-nav">
           <div class="logo">
-            <a href="index.html">
+            <a href="main.html">
             <img src="assets/images/logo.svg" alt="" /></a>
           </div>
           <div class="nav-links">
@@ -83,7 +83,7 @@
                     ups and down, but everything is up to par.  
                   </p>
                 </div>
-                <a href="read.html" >
+                <a href="read.html" target="_self" >
                 <button class="btn">Read More</button>
 
                 </a>
@@ -96,21 +96,27 @@
                 <h1>New</h1>
               </span>
               <div class="side-content ">
-                <h1>Qatar loses the first game of the world cup</h1>
-                <p>qatar suffered a shocking defeat to ecuador 2-1</p>
+                <a href="side.html">
+                  <h1>Qatar loses the first game of the world cup</h1>
+                <p>HISTORY! qatar suffered a shocking defeat to ecuador</p>
+                </a>
               </div>
               <div class="side-content ">
-                <h1>The Downsides of AI Artistry</h1>
+                <a href="side-3.html">
+                  <h1>The Downsides of AI Artistry</h1>
                 <p>
                   What are the possible adverse effects of on-demand AI image
                   generation?
                 </p>
+                </a>
               </div>
               <div class="side-content xyzz">
-                <h1>England's victory</h1>
+                <a href="side-2.html">
+                  <h1>England's victory</h1>
                 <p>
                   a victory we expected but not to this extent.
                 </p>
+                </a>
               </div>
             </div>
            
@@ -155,6 +161,16 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="foot">
+        <div class="logo-rant">
+          <a href="#header"><img src="/news/assets/images/logo.svg" alt=""></a>
+        </div>
+        <div class="text-footer">
+          <h3>This Is Not a real news site</h3>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
     <script>
         let loader = document.querySelector(".loader")
@@ -162,6 +178,12 @@
       function vanish(){
         loader.classList.add("dis")
       };
+    </script>
+     <script>
+      window.addEventListener('scroll', function(){
+        let header = document.querySelector('.header')
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
     </script>
   </body>
 </html>

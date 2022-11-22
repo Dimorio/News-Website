@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News on the World Cup</title>
+  <link rel="stylesheet" href="read.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="icon" href="assets/images/logo.svg" />
+</head>
+<body>
+  
+  <div class="loader">
+      
+  </div>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/images/icon-menu-close.svg" class="fa-time" alt="">
+      </div>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Popular</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href="">Categories</a></li>
+      </ul>
+    </div>
+    <header class="header">
+      <div class="wrapper wrapper-top">
+        <nav id="desktop-nav" class="sticky">
+          <div class="logo">
+            <a href="main.html">
+            <img src="assets/images/logo.svg" alt="" /></a>
+          </div>
+          <div class="nav-links">
+            <ul class="nav-items">
+              <li ><a class="nav-item" href="#Wax">Home</a></li>
+              <li ><a class="nav-item" href="">New</a></li>
+              <li ><a class="nav-item" href="#">Popular</a></li>
+              <li ><a class="nav-item" href="#">Trending</a></li>
+              <li ><a class="nav-item" href="#">Categories</a></li>
+            </ul
+          </div>
+        </nav>
+        <nav id="main-nav">
+          <a href="" class="logo-link">
+            <span class="logo img-container">
+              <img src="assets/images/logo.svg" alt="W" />
+            </span>
+          </a>
+            <span class="nav-open">
+              <img src="assets/images/icon-menu.svg" class="fa-bar" alt="">
+
+            </span>
+        </nav>
+      </div>
+    </header>
+
+
+
+  <div class="main-content" id="Wax">
+    <div class="page-content wrap">
+      <article class="page">
+        <header>
+          <h1>a victory we expected but not to this extent. </h1>
+          <span class="author-junk">
+            <a href="#">
+              <span class="name">Durden faye</span>
+            </a>
+          </span>
+          <span class="date">November 20, 2022</span>
+        </header>
+        <div class="org">
+          <div>
+            <div class="photo-wrapper">
+              <div class="imgwrapper">
+                <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt1ce22b766aadbf2f/637b823b54415c103135129d/GettyImages-1443273436.jpg" alt="">
+
+              </div>
+              <small><a href="">Source: Goal.com</a></small>
+            </div>
+            <p class="main-p">
+              England began their World Cup campaign with a 6-2 victory over Iran, due to a brace from Bukayo Saka and contributions from Jude Bellingham, Raheem Sterling, Marcus Rashford, and Jack Grealish.
+
+            </p>
+            <p class="">
+              England took the lead with two fast goals just before halftime. In the 43rd minute, Saka produced a wonderful half-volley from a Maguire knockdown to expand England's advantage, before Sterling finished on the volley following a right-footed cross from Harry Kane in stoppage time.
+            </p>
+              <div class="imgwrapper">
+                <img src="https://talksport.com/wp-content/uploads/sites/5/2022/11/mehdi-taremi-iran-kicks-penalty-777231562.jpg?strip=all&w=960&quality=40" alt="">
+              </div>
+              <small>source: talkSPORT</small>
+            <p class="">In stoppage time, Sardar Azmoun nearly provided another consolation for Iran, but Pickford made a fingertip save to divert his attempt onto the bar. However, Iran was given a late penalty following a VAR review for a foul on Morteza Pouraliganji, and Taremi slotted home to give Iran some pride back.</p>
+            <p class=""></p>
+            <p class=""></p>
+          </div>
+        </div>
+        
+      </article>
+    </div>
+    <footer>
+      <div class="foot">
+        <div class="logo-rant">
+          <a href="#header"><img src="/news/assets/images/logo.svg" alt=""></a>
+        </div>
+        <div class="text-footer">
+          <h3>This Is Not a real news site</h3>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+     
+     
+    </article>
+   </section>
+   
+    <script src="script.js"></script>
+    <script>
+        let loader = document.querySelector(".loader")
+      window.addEventListener("load", vanish);
+      function vanish(){
+        loader.classList.add("dis")
+      };
+    </script>
+    <script>
+      window.addEventListener('scroll', function(){
+        let header = document.querySelector('.header')
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+</body>
+</html>

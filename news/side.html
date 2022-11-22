@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News on the World Cup</title>
+  <link rel="stylesheet" href="read.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="icon" href="assets/images/logo.svg" />
+</head>
+<body>
+  
+  <div class="loader">
+      
+  </div>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/images/icon-menu-close.svg" class="fa-time" alt="">
+      </div>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Popular</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href="">Categories</a></li>
+      </ul>
+    </div>
+    <header class="header">
+      <div class="wrapper wrapper-top">
+        <nav id="desktop-nav" class="sticky">
+          <div class="logo">
+            <a href="main.html">
+            <img src="assets/images/logo.svg" alt="" /></a>
+          </div>
+          <div class="nav-links">
+            <ul class="nav-items">
+              <li ><a class="nav-item" href="#Wax">Home</a></li>
+              <li ><a class="nav-item" href="">New</a></li>
+              <li ><a class="nav-item" href="#">Popular</a></li>
+              <li ><a class="nav-item" href="#">Trending</a></li>
+              <li ><a class="nav-item" href="#">Categories</a></li>
+            </ul
+          </div>
+        </nav>
+        <nav id="main-nav">
+          <a href="" class="logo-link">
+            <span class="logo img-container">
+              <img src="assets/images/logo.svg" alt="W" />
+            </span>
+          </a>
+            <span class="nav-open">
+              <img src="assets/images/icon-menu.svg" class="fa-bar" alt="">
+
+            </span>
+        </nav>
+      </div>
+    </header>
+
+
+
+  <div class="main-content" id="Wax">
+    <div class="page-content wrap">
+      <article class="page">
+        <header>
+          <h1>HISTORY! qatar suffered a shocking defeat to ecuador</h1>
+          <span class="author-junk">
+            <a href="#">
+              <span class="name">Durden faye</span>
+            </a>
+          </span>
+          <span class="date">November 20, 2022</span>
+        </header>
+        <div class="org">
+          <div>
+            <div class="photo-wrapper">
+              <div class="imgwrapper">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_mobile_2x/s3/2022-11/akram-afif-qatar.jpg?itok=qZeFXFfq" alt="">
+
+              </div>
+              <small><a href="">Source: Sporting News</a></small>
+            </div>
+            <p class="main-p">
+              Within the first 32 minutes, Ecuador captain Enner Valencia scored two goals and had another disallowed.
+              Valencia scored his first goal in less than three minutes, but his header after an acrobatic pass from Felix Torres was ruled out for offside after a lengthy VAR review.
+
+            </p>
+            
+            <div class="embed-video-container">
+              <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Qatar loses 2-0 to Ecuador, becoming the first host nation ever to lose the opening match of the World Cup 😳 <a href="https://t.co/XDVJIjnCTm">pic.twitter.com/XDVJIjnCTm</a></p>&mdash; Yahoo Sports (@YahooSports) <a href="https://twitter.com/YahooSports/status/1594392741491900417?ref_src=twsrc%5Etfw">November 20, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
+            <p class="">However, any conspiracy theories about officials favoring the host nation were put to rest 10 minutes later when Ecuador was awarded a penalty kick for a foul by Qatar goalkeeper Saad Al Sheeb.
+
+              Valencia had been fouled, and he stepped up to score the tournament's first goal.</p>
+              <div class="imgwrapper">
+                <img src="https://media.nbcboston.com/2022/10/18899575506-1080pnbcstations.jpg?quality=85&strip=all" alt="">
+              </div>
+              <figcaption>Himothy</figcaption>
+
+              <small>source: NBC Boston</small>
+            <p class=""></p>
+            <p class=""></p>
+            <p class=""></p>
+          </div>
+        </div>
+        
+      </article>
+    </div>
+    <footer>
+      <div class="foot">
+        <div class="logo-rant">
+          <a href="#header"><img src="/news/assets/images/logo.svg" alt=""></a>
+        </div>
+        <div class="text-footer">
+          <h3>This Is Not a real news site</h3>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+     
+     
+    </article>
+   </section>
+   
+    <script src="script.js"></script>
+    <script>
+        let loader = document.querySelector(".loader")
+      window.addEventListener("load", vanish);
+      function vanish(){
+        loader.classList.add("dis")
+      };
+    </script>
+    <script>
+      window.addEventListener('scroll', function(){
+        let header = document.querySelector('.header')
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+</body>
+</html>

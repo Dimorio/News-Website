@@ -11,8 +11,12 @@ html {
   height: 100%;
   scroll-behavior: smooth;
 }
+::selection {
+  background-color: hsl(35, 77%, 62%);
+}
 small {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
+  text-transform: capitalize;
 }
 a {
   text-decoration: none;
@@ -161,11 +165,9 @@ header {
   padding: 1rem 1.5rem;
 }
 
-.main-content,
-.page-content,
-.page {
+.main-content {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .wrap {
   max-width: 750px;
@@ -196,6 +198,18 @@ header {
 }
 .page .org .photo-wrapper {
   padding-bottom: 10px;
+  padding-top: 20px;
+}
+.org {
+  margin-top: 8rem;
+}
+.org ul {
+  padding: 0px 50px;
+  margin: 20px auto;
+}
+.org ul li {
+  padding-bottom: 10px;
+  list-style: disc;
 }
 .page .author-junk {
   display: block;
@@ -215,6 +229,28 @@ header {
   border-top: 1px solid #000;
   width: 50px;
   height: 0;
+}
+.embed-video-container {
+  margin: 0px 50px;
+}
+footer {
+  position: relative;
+  width: 100%;
+  color: white;
+}
+footer .foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  color: black;
+}
+.logo-rant {
+  margin-right: 20px;
+  padding: 20px;
+}
+.logo-rant img {
+  width: 70px;
 }
 
 @media only screen and (max-width: 375px) {
