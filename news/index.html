@@ -13,6 +13,10 @@
     <link rel="icon" href="assets/images/logo.svg" />
   </head>
   <body>
+
+    <div class="loader">
+      
+  </div>
    
     <div class="sidebar">
       <div class="sidebar-header">
@@ -35,8 +39,8 @@
           </div>
           <div class="nav-links">
             <ul class="nav-items">
-              <li ><a class="nav-item" href="#">Home</a></li>
-              <li ><a class="nav-item" href="#">New</a></li>
+              <li ><a class="nav-item" href="">Home</a></li>
+              <li ><a class="nav-item" href="#main">New</a></li>
               <li ><a class="nav-item" href="#">Popular</a></li>
               <li ><a class="nav-item" href="#">Trending</a></li>
               <li ><a class="nav-item" href="#">Categories</a></li>
@@ -54,14 +58,11 @@
               <img src="assets/images/icon-menu.svg" class="fa-bar" alt="">
 
             </span>
-          
-          
-          
         </nav>
        
       </div>
     </header>
-    <main class="main-y">
+    <main class="main-y" id="main">
       <div class="wrapper">
         <div class="hero-container">
           <div class="hero-section">
@@ -71,19 +72,21 @@
             <div class="hero-content">
               <div class="hero-title">
                 <h1>
-                  The Bright
-                  Future of Web 3.0?
+                  The 2022 World Cup Kicks Off
                 </h1>
               </div>
               <div class="hero-mess">
                 <div class="hero-text">
                   <p>
-                    We dive into the next evolution of the web that claims to
-                    put the power of the platforms back into the hands of the
-                    people. But is it really fulfilling its promise?
+                    The world cup has started and has started off shockingly!
+                    The cup is being held for the first time in qatar, the decision had its 
+                    ups and down, but everything is up to par.   <i class="fa-solid fa-arrow-right"></i>
                   </p>
                 </div>
+                <a href="read.html" >
                 <button class="btn">Read More</button>
+
+                </a>
               </div>
             </div>
           </div>
@@ -93,8 +96,8 @@
                 <h1>New</h1>
               </span>
               <div class="side-content ">
-                <h1>Hydrogen VS Electric Cars</h1>
-                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                <h1>Qatar loses the first game of the world cup</h1>
+                <p>qatar suffered a shocking defeat to ecuador 2-1</p>
               </div>
               <div class="side-content ">
                 <h1>The Downsides of AI Artistry</h1>
@@ -104,10 +107,9 @@
                 </p>
               </div>
               <div class="side-content xyzz">
-                <h1>Is VC Funding Drying Up?</h1>
+                <h1>England's victory</h1>
                 <p>
-                  Private funding by VC firms is down 50% YOY. We take a look at
-                  what that means.
+                  a victory we expected but not to this extent.
                 </p>
               </div>
             </div>
@@ -154,5 +156,12 @@
       </div>
     </main>
     <script src="script.js"></script>
+    <script>
+        let loader = document.querySelector(".loader")
+      window.addEventListener("load", vanish);
+      function vanish(){
+        loader.classList.add("dis")
+      };
+    </script>
   </body>
 </html>

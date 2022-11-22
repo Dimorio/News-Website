@@ -9,6 +9,7 @@ body,
 html {
   font-family: "Inter", sans-serif;
   height: 100%;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -36,6 +37,27 @@ h2 {
 header {
   width: 100%;
   height: 10vh;
+}
+
+.loader {
+  background: white url(assets/images/Ellipsis-5.6s-200px.gif) no-repeat center
+    center;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dis {
+  animation: vanish 1s forwards ease-in-out;
+}
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 .wrapper {
   max-width: 1400px;
@@ -65,10 +87,18 @@ header {
 .nav-links .nav-items .nav-item:hover {
   color: hsl(5, 85%, 63%);
 }
+.sidebar .menu li a {
+  transition: 500ms ease;
+}
+.sidebar .menu li a:hover {
+  color: hsl(35, 77%, 62%);
+}
 .main-y {
   width: 100%;
   padding-top: 1.5rem;
-  padding-bottom: 6rem;
+}
+.news {
+  padding: 3rem 0;
 }
 .hero-container {
   display: flex;
@@ -76,16 +106,20 @@ header {
 .hero-content {
   display: flex;
   padding: 1.5rem 0px;
+  text-transform: capitalize;
+}
+.hero-title {
+  width: fit-content;
 }
 .hero-title h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 .hero-mess {
   padding-left: 2.5rem;
 }
 .hero-mess {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
 }
 .hero-mess .btn {
@@ -99,6 +133,7 @@ header {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .hero-mess .btn:hover {
   color: white;
   background-color: black;
@@ -118,6 +153,7 @@ header {
   width: 90%;
   height: 100%;
   padding-left: 20px;
+  text-transform: capitalize;
 }
 .side-container {
   background-color: hsl(240, 100%, 5%);
@@ -288,7 +324,7 @@ header {
     font-size: 15px;
   }
   .sidebar {
-    width: 100%;
+    width: 70%;
   }
 
   #main-nav {
@@ -305,7 +341,7 @@ header {
     width: 50px;
   }
   .sidebar {
-    width: 100%;
+    width: 70%;
   }
   .wrapper {
     max-width: 400px;

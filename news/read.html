@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News on the World Cup</title>
+  <link rel="stylesheet" href="read.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="icon" href="assets/images/logo.svg" />
+</head>
+<body>
+  
+  <div class="loader">
+      
+  </div>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/images/icon-menu-close.svg" class="fa-time" alt="">
+      </div>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Popular</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href="">Categories</a></li>
+      </ul>
+    </div>
+    <header class="header">
+      <div class="wrapper wrapper-top">
+        <nav id="desktop-nav" class="sticky">
+          <div class="logo">
+            <a href="index.html">
+            <img src="assets/images/logo.svg" alt="" /></a>
+          </div>
+          <div class="nav-links">
+            <ul class="nav-items">
+              <li ><a class="nav-item" href="#Wax">Home</a></li>
+              <li ><a class="nav-item" href="">New</a></li>
+              <li ><a class="nav-item" href="#">Popular</a></li>
+              <li ><a class="nav-item" href="#">Trending</a></li>
+              <li ><a class="nav-item" href="#">Categories</a></li>
+            </ul
+          </div>
+        </nav>
+        <nav id="main-nav">
+          <a href="" class="logo-link">
+            <span class="logo img-container">
+              <img src="assets/images/logo.svg" alt="W" />
+            </span>
+          </a>
+            <span class="nav-open">
+              <img src="assets/images/icon-menu.svg" class="fa-bar" alt="">
+
+            </span>
+        </nav>
+      </div>
+    </header>
+
+
+
+  <div class="main-content" id="Wax">
+    <div class="page-content wrap">
+      <article class="page">
+        <header>
+          <h1>The World cup kick off with a bang!</h1>
+          <span class="author-junk">
+            <a href="#">
+              <span class="name">Durden faye</span>
+            </a>
+          </span>
+          <span class="date">November 20, 2022</span>
+        </header>
+        <div class="org">
+          <div>
+            <div class="photo-wrapper">
+              <div class="imgwrapper">
+                <img src="https://digitalhub.fifa.com/transform/11efbf28-c08e-4a13-958f-78685fbb8a80/Qatar-2022-s-32-teams-graphic" alt="">
+
+              </div>
+              <small><a href="">FIFA.com</a></small>
+            </div>
+            <p class="main-p">
+              The United States men's national team started its 2022 FIFA World Cup campaign with a disappointing draw against Wales on Monday night.
+            </p>
+            <p class="">The Americans went ahead through Tim Weah, but then dropped a potential opening victory when Walker Zimmerman fouled Gareth Bale in the penalty area.</p>
+            <p class="">Bale's converted penalty makes the math to get out of Group B tougher for the USMNT, especially with England on the horizon on Friday.</p>
+            <p class="">England is in the clear in Group B after it blew past Iran with six goals in the first of three games on Monday.</p>
+            <p class="">The Three Lions are one of two European teams to be on top of their groups in Qatar. The Netherlands landed the top spot in Group A with their 2-0 win over Senegal.</p>
+            <p class=""></p>
+            <p class=""></p>
+            <p class=""></p>
+            <p class=""></p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+     
+     
+    </article>
+   </section>
+    <script src="script.js"></script>
+    <script>
+        let loader = document.querySelector(".loader")
+      window.addEventListener("load", vanish);
+      function vanish(){
+        loader.classList.add("dis")
+      };
+    </script>
+    <script>
+      window.addEventListener('scroll', function(){
+        let header = document.querySelector('.header')
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+</body>
+</html>
