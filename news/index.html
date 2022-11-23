@@ -13,11 +13,9 @@
     <link rel="icon" href="assets/images/logo.svg" />
   </head>
   <body>
+    
 
-    <div class="loader">
-      
-  </div>
-   
+    <div class="loader"></div>
     <div class="sidebar">
       <div class="sidebar-header">
         <img src="assets/images/icon-menu-close.svg" class="fa-time" alt="">
@@ -30,6 +28,7 @@
         <li><a href="">Categories</a></li>
       </ul>
     </div>
+    <div class="overlay hidden"></div>
     <header class="header" id="header">
       <div class="wrapper wrapper-top">
         <nav id="desktop-nav">
@@ -59,7 +58,6 @@
 
             </span>
         </nav>
-       
       </div>
     </header>
     <main class="main-y" id="main">
@@ -69,7 +67,7 @@
             <div class="hero-img">
               <a href="side.html"><img loading="lazy" src="https://images.mlssoccer.com/image/private/t_q-best/prd-league/ufp9p8wc4fqawmnx3ouf.jpg" alt="" /></a>
             </div>
-            <div class="hero-content">
+            <div class="hero-content"><a href="read.html">
               <div class="hero-title">
                 <h1>
                   The 2022 World Cup Kicks Off
@@ -88,6 +86,8 @@
 
                 </a>
               </div>
+            </a>
+            
             </div>
           </div>
           <aside class="side" id="new">
@@ -134,7 +134,6 @@
                 </a>
               </div>
             </div>
-           
           </aside>
         </div>
       </div>
@@ -142,40 +141,31 @@
 
     <main class="news">
       <div class="wrapper flex-wrapper">
-        <div class="items">
-          <div class="basic-img">
-            <img src="assets/images/image-retro-pcs.jpg" alt="" />
-          </div>
-          <div class="content-fanet">
-            <h1>01</h1>
-            <h2>Reviving Retro PCs</h2>
-            <p>What happens when old PCs are given modern upgrades?</p>
-          </div>
-        </div>
-
-        <div class="items">
-          <div class="basic-img">
-            <img src="assets/images/image-top-laptops.jpg" alt="" />
-          </div>
-          <div class="content-fanet">
-            <h1>02</h1>
-            <h2>Top 10 Laptops of 2022</h2>
-            <p>Our best picks for various needs and budgets.</p>
-          </div>
-        </div>
-
-        <div class="items">
-          <div class="basic-img">
-            <img src="assets/images/image-gaming-growth.jpg" alt="" />
-          </div>
-          <div class="content-fanet">
-            <h1>03</h1>
-            <h2>The Growth of Gaming</h2>
-            <p>How the pandemic has sparked fresh opportunities.</p>
-          </div>
-        </div>
+    
       </div>
     </main>
+
+    <div class="popup">
+      
+      <div class="popup-container wrapper">
+        <div class="logo-wrapper">
+          <img src="assets/images/logo.svg" alt="">
+        </div>
+        <div class="close">
+          <img src="assets/images/icon-menu-close.svg" alt="">
+        </div>
+        <div class="popup-content">
+          <h2>Subscribe to our <br>newsletter</h2>
+          <p>subscribe for live news updates!</p>
+          <label for="input">
+            <input type="text" placeholder="Enter your email address">
+            <button class="btn">Subscribe</button>
+          </label>
+        </div>
+      </div>
+      
+    </div>
+    
     <!-- <footer>
       <div class="foot">
         
@@ -186,13 +176,32 @@
     </footer> -->
     <script src="script.js"></script>
     <script>
+      const overlay = document.querySelector(".overlay");
+
+      const popup = document.querySelector(".popup")
+      window.onload = function(){
+        setTimeout(function(){
+          popup.style.display = 'block'
+        overlay.classList.remove("hidden");
+
+        }, 4000)
+      }
+      let closeBTN = document.querySelector('.close')
+      closeBTN.addEventListener('click',()=>{
+        popup.style.display = 'none'
+        overlay.classList.add("hidden");
+      });
+      
+
+    </script>
+    <script>
         let loader = document.querySelector(".loader")
       window.addEventListener("load", vanish);
       function vanish(){
         loader.classList.add("dis")
       };
     </script>
-     <script>
+    <script>
       window.addEventListener('scroll', function(){
         let header = document.querySelector('.header')
         header.classList.toggle("sticky", window.scrollY > 0);
