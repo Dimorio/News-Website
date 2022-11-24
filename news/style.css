@@ -205,6 +205,9 @@ header {
   .hero-content p {
     text-align: justify;
   }
+  .header.sticky {
+    display: none;
+  }
 }
 @media (min-width: 481px) {
   #desktop-nav {
@@ -251,6 +254,9 @@ header {
   }
   .hero-content p {
     text-align: justify;
+  }
+  .header.sticky {
+    display: none;
   }
 }
 @media (min-width: 961px) {
