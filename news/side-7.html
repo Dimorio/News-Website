@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemsworth found out he has Alzheimer</title>
+  <link rel="stylesheet" href="read.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="icon" href="assets/images/logo.svg" />
+</head>
+<body>
+  
+  <div class="loader">
+      
+  </div>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/images/icon-menu-close.svg" class="fa-time" alt="">
+      </div>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Popular</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href="">Categories</a></li>
+      </ul>
+    </div>
+    <header class="header">
+      <div class="wrapper wrapper-top">
+        <nav id="desktop-nav" class="sticky">
+          <div class="logo">
+            <a href="index.html">
+            <img src="assets/images/logo.svg" alt="" /></a>
+          </div>
+          <div class="nav-links">
+            <ul class="nav-items">
+              <li ><a class="nav-item" href="index.html">Home</a></li>
+              
+              <li ><a class="nav-item" href="">New</a></li>
+              <li ><a class="nav-item" href="#">Popular</a></li>
+              <li ><a class="nav-item" href="#">Trending</a></li>
+              <li ><a class="nav-item" href="#">Categories</a></li>
+            </ul
+          </div>
+        </nav>
+        <nav id="main-nav">
+          <a href="" class="logo-link">
+            <span class="logo img-container">
+              <img src="assets/images/logo.svg" alt="W" />
+            </span>
+          </a>
+            <span class="nav-open">
+              <img src="assets/images/icon-menu.svg" class="fa-bar" alt="">
+
+            </span>
+        </nav>
+      </div>
+    </header>
+
+
+
+  <div class="main-content" id="Wax">
+    <div class="page-content wrap">
+      <article class="page">
+        <header>
+          <h1>Ronaldo departs from united</h1>
+          <span class="author-junk">
+            <a href="#">
+              <span class="name">Durden faye</span>
+            </a>
+          </span>
+          <span class="date">November 22, 2022</span>
+        </header>
+        <div class="org">
+          <div>
+            <div class="photo-wrapper">
+              <div class="imgwrapper">
+                <img loading="lazy" src="https://nypost.com/wp-content/uploads/sites/2/2022/11/2022-11-22T174221Z_229966263_RC2X9X9ZT0YI_RTRMADP_3_SOCCER-ENGLAND-MUN-RONALDO.jpg?quality=75&strip=all" alt="">
+
+              </div>
+              <small><a href="">Source: new york post</a></small>
+            </div>
+            <p class="main-p">
+              Days after giving an explosive interview slamming manager Erik ten Hag and the club's owners, Cristiano Ronaldo has announced that he would quit Manchester United "with immediate effect."
+            </p>
+            <p class="">
+              “Following conversations with Manchester United we have mutually agreed to end our contract early,” Ronaldo said. “I love Manchester United and I love the fans, that will never ever change. However, it feels like the right time for me to seek a new challenge.
+            </p>
+            <p class="main-p">
+              Ronaldo, who is currently in Qatar with Portugal attempting to win his country's first World Cup title, has been left frustrated after being reduced to a fringe member of United's team this season.
+            </p>
+          </div>
+        </div>
+        
+      </article>
+    </div>
+    
+  </div>
+
+     
+     
+    </article>
+   </section>
+   
+    <script src="script.js"></script>
+    <script>
+        let loader = document.querySelector(".loader")
+      window.addEventListener("load", vanish);
+      function vanish(){
+        loader.classList.add("dis")
+      };
+    </script>
+    <script>
+      window.addEventListener('scroll', function(){
+        let header = document.querySelector('.header')
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+</body>
+</html>
