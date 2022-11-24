@@ -37,6 +37,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:visited {
+  color: hsl(35, 77%, 62%);
+}
 li {
   list-style: none;
 }
@@ -378,7 +381,7 @@ header {
   padding-bottom: 1rem;
   color: hsl(35, 77%, 62%);
 }
-.side-content:visited {
+.side-content a:visited {
   color: hsl(35, 77%, 62%);
 }
 .side-content {
