@@ -378,6 +378,9 @@ header {
   padding-bottom: 1rem;
   color: hsl(35, 77%, 62%);
 }
+.side-content:visited {
+  color: hsl(35, 77%, 62%);
+}
 .side-content {
   color: white;
   padding-bottom: 2.5rem;
